@@ -35,4 +35,51 @@ Collected data is then cleaned, preprocessed, scaled using Scikit Learn's train 
 
 
   #### How do these new features enhance forecasting and predictions ?
-  
+
+
+  #### **1. Lag Features (Lag_1, Lag_2):**
+
+What it captures: Past stock prices.
+How it helps: Provides context for recent price trends and helps the model recognize short-term momentum or reversal patterns.
+
+
+#### **Rolling Window Features (Rolling_Mean, Rolling_Min, Rolling_Max, S_3, S_9, S_18):**
+
+What it captures: Moving averages and extremes over different time windows.
+How it helps: Identifies trends and volatility over short to medium time frames, smoothing out noise and highlighting significant movements.
+
+
+#### **Exponential Moving Averages (EMA_12, EMA_26):**
+
+What it captures: Weighted moving averages that give more importance to recent prices.
+How it helps: Emphasizes recent price action, which can be more relevant for predicting near-term future prices.
+
+
+#### **MACD and MACD Signal:**
+
+What it captures: Difference between two EMAs and its signal line.
+How it helps: Detects changes in the strength, direction, momentum, and duration of a trend. Commonly used to generate buy/sell signals.
+
+
+#### **Relative Strength Index (RSI):**
+
+What it captures: Magnitude of recent price changes.
+How it helps: Indicates overbought or oversold conditions, helping to predict potential reversals or continuations of a trend.
+
+
+#### **Bollinger Bands (Bollinger_Mid, Bollinger_Upper, Bollinger_Lower):**
+
+What it captures: Volatility around a moving average.
+How it helps: Identifies high and low price levels relative to previous trades, often used to detect overbought or oversold conditions and to predict price reversals.
+
+
+#### **Volume-Based Features (Volume_Rolling_Mean, Volume_Change):**
+
+What it captures: Trading volume trends and changes.
+How it helps: High volume changes often precede significant price movements. Volume data can help the model understand the conviction behind price movements.
+
+
+#### **Overall Statistics (Overall_Mean, Overall_Min, Overall_Max):**
+
+What it captures: Long-term averages and extremes.
+How it helps: Provides a baseline or reference for the stock's performance over the entire dataset.
