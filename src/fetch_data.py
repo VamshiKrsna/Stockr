@@ -13,7 +13,8 @@ def save_to_csv(stock_symbol, df):
 
 if __name__ == "__main__":
     stocks = ["AAPL", "MSFT", "GOOGL", "AMZN", "TSLA"]
-    start_date = "2018-01-01"  
+    start_date = "2006-01-01" # Lets try for 18 years of data
+    # All stocks except TSLA have data from 2006, due to late launch of TSLA's IPO we have data from 2010  
     
     for stock in stocks:
         df = fetch_stock_data(stock, start_date)

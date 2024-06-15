@@ -22,4 +22,4 @@ if __name__ == "__main__":
         file_path = f"../data/{stock}.csv"
         X_train, X_test, y_train, y_test = preprocess_data(file_path)
         print(f"Preprocessed data for {stock}")
-        print(X_train, X_test, y_train, y_test)
+        # print(X_train, X_test, y_train, y_test)
