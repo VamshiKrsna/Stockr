@@ -39,8 +39,8 @@ Collected data is then cleaned, preprocessed, scaled using Scikit Learn's train 
 
   #### **1. Lag Features (Lag_1, Lag_2):**
 
-    What it captures: Past stock prices.
-    How it helps: Provides context for recent price trends and helps the model recognize short-      term momentum or reversal patterns.
+      What it captures: Past stock prices.
+      How it helps: Provides context for recent price trends and helps the model recognize short-      term momentum or reversal patterns.
 
 
 #### **2. Rolling Window Features (Rolling_Mean, Rolling_Min, Rolling_Max, S_3, S_9, S_18):**
