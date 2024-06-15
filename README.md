@@ -19,3 +19,20 @@ Stockr is an end to end ML and DL Powered App that lets you predict/forecast a s
 
 
 Stockr Uses yfinance api to extract stock data. Currently, Stockr supports Apple, Microsoft, Amazon, Google, Tesla Stocks data.
+
+
+### 2. Data Preprocessing
+
+
+Collected data is then cleaned, preprocessed, scaled using Scikit Learn's train test split and Standard Scaler.
+
+
+### 3. Feature Engineering
+
+
+- We then extract more meaningful features and Indicators from the preprocessed data.
+- These Features Include : Rolling Window Features, Lag Features, Exponential Moving Average, Moving Average Convergence Divergence, Relative Strength Index, Bollinger Bands, Volume Based Features.
+
+
+  #### How do these new features enhance forecasting and predictions ?
+  
