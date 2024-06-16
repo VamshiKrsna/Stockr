@@ -57,8 +57,8 @@ def add_features(df):
 if __name__ == "__main__":
     for stock in ["AAPL","MSFT","GOOGL","AMZN","TSLA"]:
         file_path = f"../data/{stock}.csv"
-        df = pd.read_csv(file_path,index_col=0)
+        df = pd.read_csv(file_path)
         df = add_features(df)
         df.to_csv(file_path, index=False)
         print(f"Features added for {stock}")
-        print(df.head(5))
+        # print(df.head(5))
