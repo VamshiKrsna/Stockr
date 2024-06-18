@@ -2,6 +2,7 @@
 import pandas as pd
 
 def add_features(df):
+
     # Add rolling window features
     # Adding Rolling mean features for 3,,18 day frequencies.
     df['S_3'] = df['Close'].rolling(window=3).mean()
@@ -31,15 +32,6 @@ def add_features(df):
     loss = (-delta.where(delta < 0, 0)).rolling(window=14).mean()
     RS = gain / loss
     df['RSI'] = 100 - (100 / (1 + RS))
-    
-    # Bollinger Bands
-    df['Bollinger_Mid'] = df['Close'].rolling(window=20).mean()
-    df['Bollinger_Upper'] = df['Bollinger_Mid'] + 2*df['Close'].rolling(window=20).std()
-    df['Bollinger_Lower'] = df['Bollinger_Mid'] - 2*df['Close'].rolling(window=20).std()
-    
-    # Volume-based features
-    df['Volume_Rolling_Mean'] = df['Volume'].rolling(window=5).mean()
-    df['Volume_Change'] = df['Volume'].pct_change()
     
     # Overall statistics
     df['Overall_Mean'] = df['Close'].mean()
