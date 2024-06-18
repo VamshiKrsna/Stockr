@@ -31,6 +31,7 @@ Collected data is then cleaned, preprocessed, scaled using Scikit Learn's train 
 
 
 - We then extract more meaningful features and Indicators from the preprocessed data.
+- We can simply add features like day of week, quarter, Month, etc.
 - These Features Include : Rolling Window Features, Lag Features, Exponential Moving Average, Moving Average Convergence Divergence, Relative Strength Index, Bollinger Bands, Volume Based Features.
 
 
