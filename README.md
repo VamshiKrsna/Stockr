@@ -31,6 +31,7 @@ Collected data is then cleaned, preprocessed, scaled using Scikit Learn's train 
 
 
 - We then extract more meaningful features and Indicators from the preprocessed data.
+- We can simply add features like day of week, quarter, Month, etc.
 - These Features Include : Rolling Window Features, Lag Features, Exponential Moving Average, Moving Average Convergence Divergence, Relative Strength Index, Bollinger Bands, Volume Based Features.
 
 
@@ -67,19 +68,7 @@ Collected data is then cleaned, preprocessed, scaled using Scikit Learn's train 
     How it helps: Indicates overbought or oversold conditions, helping to predict potential       reversals or continuations of a trend.
 
 
-  #### **6. Bollinger Bands (Bollinger_Mid, Bollinger_Upper, Bollinger_Lower):**
-
-    What it captures: Volatility around a moving average.
-    How it helps: Identifies high and low price levels relative to previous trades, often used       to detect overbought or oversold conditions and to predict price reversals.
-
-
-  #### **7. Volume-Based Features (Volume_Rolling_Mean, Volume_Change):**
-
-    What it captures: Trading volume trends and changes.
-    How it helps: High volume changes often precede significant price movements. Volume data can     help the model understand the conviction behind price movements.
-
-
-  #### **8. Overall Statistics (Overall_Mean, Overall_Min, Overall_Max):**
+  #### **6. Overall Statistics (Overall_Mean, Overall_Min, Overall_Max):**
 
     What it captures: Long-term averages and extremes.
     How it helps: Provides a baseline or reference for the stock's performance over the entire dataset.
