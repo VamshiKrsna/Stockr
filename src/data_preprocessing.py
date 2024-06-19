@@ -1,3 +1,4 @@
+# Helper file to preprocess data into train and test sets (not very useful, anyways)
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler

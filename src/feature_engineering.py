@@ -4,6 +4,9 @@ import datetime
 
 def add_features(df):
 
+    # Lets drop Dividends and Stock Splits as they are not very effective and useful for forecast
+    df = df.drop(["Dividends","Stock Splits"],axis = 1)
+
     #Lets extract day, day of week, etc.
     # print(df['Date'].dtype)
     # df['Date'] = df['Date'].apply(lambda x: datetime.datetime.strptime(x, '%Y-%m-%d %H:%M:%S%z'))
@@ -18,7 +21,7 @@ def add_features(df):
     df['Year'] = df['Date'].dt.year
 
     # Add rolling window features
-    # Adding Rolling mean features for 3,,18 day frequencies.
+    # Adding Rolling mean features for 3,9,18 day frequencies.
     df['S_3'] = df['Close'].rolling(window=3).mean()
     df['S_9'] = df['Close'].rolling(window=9).mean()
     df['S_18'] = df['Close'].rolling(window=18).mean()
@@ -52,8 +55,8 @@ def add_features(df):
     df['Overall_Min'] = df['Close'].min()
     df['Overall_Max'] = df['Close'].max()
 
-    # Add target variable
-    df['Target'] = df['Close'].shift(-1)
+    # Add target (Close) variable
+    df['Close'] = df['Close'].shift(-1)
     
     # Drop rows with missing values
     df.dropna(inplace=True)
