@@ -20,24 +20,6 @@ model_dir = "../models/"
 
 os.makedirs(model_dir, exist_ok=True)
 
-def prepare_data(data):
-    X = data.drop('Close', axis=1)
-    y = data['Close']
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, shuffle=False,random_state = 101)
-    return X_train, X_test, y_train, y_test
-
-def prepare_data_arima(data):
-    X = data['Close'].values
-    
-
-def train_arima(data,stock_name):
-    data = prepare_data_arima(data)
-    model = ARIMA(data, order=(5, 1, 0))
-    model_fit = model.fit()
-    print(f"ARIMA Model for {stock_name}:")
-    print(model_fit.summary())
-    # Save the model
-    joblib.dump(model_fit, os.path.join(model_dir, f"arima_{stock_name}.pkl"))
 
 
 if __name__ == "__main__":
