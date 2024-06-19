@@ -1,6 +1,7 @@
 # In this script, We will be further add and improve the Dataset by adding more features like Rolling Window features.
 import pandas as pd
 import datetime
+from datetime import *
 
 def add_features(df):
 
@@ -13,12 +14,15 @@ def add_features(df):
     df['Date'] = pd.to_datetime(df['Date'], utc=True)
     # print(df['Date'].dtype)
 
-    
+    # df['Date'] = df['Date'].dt.date
     df['Day'] = df['Date'].dt.day
     df['DayOfWeek'] = df['Date'].dt.dayofweek
     df['Quarter'] = df['Date'].dt.quarter
     df['Month'] = df['Date'].dt.month
     df['Year'] = df['Date'].dt.year
+
+    # df['Date'] = df['Date'].apply(lambda x: datetime.strptime(x, "%Y-%m-%d %H:%M:%S%z").date())
+    # df['Date'] = pd.to_datetime(df['Date'], format="%Y-%m-%d %H:%M:%S%z").dt.date
 
     # Add rolling window features
     # Adding Rolling mean features for 3,9,18 day frequencies.
