@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Rizen3/Desktop/Vamshi/Machine%20Learning%20and%20DSA/SelfProjects/stockr/src/pipelines/mlruns/0/d40d9766733a4f6f8ced08abbf66db34/artifacts
+end_time: 1725291715439
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d40d9766733a4f6f8ced08abbf66db34
+run_name: bedecked-frog-792
+run_uuid: d40d9766733a4f6f8ced08abbf66db34
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1725291715171
+status: 3
+tags: []
+user_id: Rizen3
