@@ -1,0 +1,1700 @@
+2024-07-22 22:47:37,165:INFO:Soft dependency imported: prophet: 1.1.5
+2024-07-22 22:47:43,151:INFO:PyCaret TSForecastingExperiment
+2024-07-22 22:47:43,151:INFO:Logging name: ts-default-name
+2024-07-22 22:47:43,151:INFO:ML Usecase: MLUsecase.TIME_SERIES
+2024-07-22 22:47:43,151:INFO:version 3.3.2
+2024-07-22 22:47:43,151:INFO:Initializing setup()
+2024-07-22 22:47:43,151:INFO:self.USI: ad1f
+2024-07-22 22:47:43,152:INFO:self._variable_keys: {'seasonality_present', 'approach_type', 'y_test', 'fold_generator', 'significant_sps_no_harmonics', 'y', 'y_train_transformed', 'memory', 'USI', 'X_test', 'html_param', 'idx', 'gpu_n_jobs_param', 'n_jobs_param', 'y_train', 'exp_name_log', 'exp_id', 'enforce_exogenous', '_available_plots', 'all_sps_to_use', 'data', 'strictly_positive', 'pipeline', 'X_train_transformed', 'log_plots_param', 'X_train', 'y_test_transformed', 'X_test_transformed', 'enforce_pi', 'fh', 'index_type', 'X', 'significant_sps', 'seed', 'logging_param', 'exogenous_present', 'fold_param', 'gpu_param', 'candidate_sps', 'model_engines', 'y_transformed', 'primary_sp_to_use', 'X_transformed', '_ml_usecase'}
+2024-07-22 22:47:43,152:INFO:Checking environment
+2024-07-22 22:47:43,152:INFO:python_version: 3.11.4
+2024-07-22 22:47:43,152:INFO:python_build: ('tags/v3.11.4:d2340ef', 'Jun  7 2023 05:45:37')
+2024-07-22 22:47:43,152:INFO:machine: AMD64
+2024-07-22 22:47:43,153:INFO:platform: Windows-10-10.0.19045-SP0
+2024-07-22 22:47:43,157:INFO:Memory: svmem(total=17125707776, available=8069693440, percent=52.9, used=9056014336, free=8069693440)
+2024-07-22 22:47:43,157:INFO:Physical Core: 4
+2024-07-22 22:47:43,157:INFO:Logical Core: 4
+2024-07-22 22:47:43,157:INFO:Checking libraries
+2024-07-22 22:47:43,157:INFO:System:
+2024-07-22 22:47:43,158:INFO:    python: 3.11.4 (tags/v3.11.4:d2340ef, Jun  7 2023, 05:45:37) [MSC v.1934 64 bit (AMD64)]
+2024-07-22 22:47:43,158:INFO:executable: C:\Users\Rizen3\Desktop\Vamshi\Machine Learning and DSA\MLVenv\Scripts\python.exe
+2024-07-22 22:47:43,158:INFO:   machine: Windows-10-10.0.19045-SP0
+2024-07-22 22:47:43,158:INFO:PyCaret required dependencies:
+2024-07-22 22:47:43,440:INFO:                 pip: 23.1.2
+2024-07-22 22:47:43,440:INFO:          setuptools: 65.5.0
+2024-07-22 22:47:43,440:INFO:             pycaret: 3.3.2
+2024-07-22 22:47:43,441:INFO:             IPython: 8.20.0
+2024-07-22 22:47:43,441:INFO:          ipywidgets: 8.1.3
+2024-07-22 22:47:43,441:INFO:                tqdm: 4.66.1
+2024-07-22 22:47:43,441:INFO:               numpy: 1.26.2
+2024-07-22 22:47:43,441:INFO:              pandas: 2.1.3
+2024-07-22 22:47:43,441:INFO:              jinja2: 3.1.3
+2024-07-22 22:47:43,441:INFO:               scipy: 1.11.4
+2024-07-22 22:47:43,441:INFO:              joblib: 1.3.2
+2024-07-22 22:47:43,441:INFO:             sklearn: 1.4.2
+2024-07-22 22:47:43,441:INFO:                pyod: 2.0.1
+2024-07-22 22:47:43,441:INFO:            imblearn: 0.12.3
+2024-07-22 22:47:43,441:INFO:   category_encoders: 2.6.3
+2024-07-22 22:47:43,441:INFO:            lightgbm: 4.4.0
+2024-07-22 22:47:43,441:INFO:               numba: 0.58.1
+2024-07-22 22:47:43,441:INFO:            requests: 2.31.0
+2024-07-22 22:47:43,441:INFO:          matplotlib: 3.7.5
+2024-07-22 22:47:43,441:INFO:          scikitplot: 0.3.7
+2024-07-22 22:47:43,441:INFO:         yellowbrick: 1.5
+2024-07-22 22:47:43,441:INFO:              plotly: 5.22.0
+2024-07-22 22:47:43,441:INFO:    plotly-resampler: Not installed
+2024-07-22 22:47:43,442:INFO:             kaleido: 0.2.1
+2024-07-22 22:47:43,442:INFO:           schemdraw: 0.15
+2024-07-22 22:47:43,442:INFO:         statsmodels: 0.14.2
+2024-07-22 22:47:43,442:INFO:              sktime: 0.26.0
+2024-07-22 22:47:43,442:INFO:               tbats: 1.1.3
+2024-07-22 22:47:43,442:INFO:            pmdarima: 2.0.4
+2024-07-22 22:47:43,442:INFO:              psutil: 5.9.7
+2024-07-22 22:47:43,442:INFO:          markupsafe: 2.1.3
+2024-07-22 22:47:43,442:INFO:             pickle5: Not installed
+2024-07-22 22:47:43,442:INFO:         cloudpickle: 2.2.1
+2024-07-22 22:47:43,442:INFO:         deprecation: 2.1.0
+2024-07-22 22:47:43,443:INFO:              xxhash: 3.4.1
+2024-07-22 22:47:43,443:INFO:           wurlitzer: Not installed
+2024-07-22 22:47:43,443:INFO:PyCaret optional dependencies:
+2024-07-22 22:47:43,459:INFO:                shap: 0.44.0
+2024-07-22 22:47:43,459:INFO:           interpret: Not installed
+2024-07-22 22:47:43,459:INFO:                umap: Not installed
+2024-07-22 22:47:43,459:INFO:     ydata_profiling: Not installed
+2024-07-22 22:47:43,459:INFO:  explainerdashboard: Not installed
+2024-07-22 22:47:43,459:INFO:             autoviz: Not installed
+2024-07-22 22:47:43,459:INFO:           fairlearn: Not installed
+2024-07-22 22:47:43,459:INFO:          deepchecks: Not installed
+2024-07-22 22:47:43,459:INFO:             xgboost: Not installed
+2024-07-22 22:47:43,459:INFO:            catboost: Not installed
+2024-07-22 22:47:43,459:INFO:              kmodes: Not installed
+2024-07-22 22:47:43,459:INFO:             mlxtend: Not installed
+2024-07-22 22:47:43,459:INFO:       statsforecast: Not installed
+2024-07-22 22:47:43,459:INFO:        tune_sklearn: Not installed
+2024-07-22 22:47:43,460:INFO:                 ray: Not installed
+2024-07-22 22:47:43,460:INFO:            hyperopt: Not installed
+2024-07-22 22:47:43,460:INFO:              optuna: Not installed
+2024-07-22 22:47:43,460:INFO:               skopt: Not installed
+2024-07-22 22:47:43,460:INFO:              mlflow: 2.2.2
+2024-07-22 22:47:43,460:INFO:              gradio: Not installed
+2024-07-22 22:47:43,460:INFO:             fastapi: Not installed
+2024-07-22 22:47:43,460:INFO:             uvicorn: Not installed
+2024-07-22 22:47:43,460:INFO:              m2cgen: Not installed
+2024-07-22 22:47:43,460:INFO:           evidently: Not installed
+2024-07-22 22:47:43,460:INFO:               fugue: Not installed
+2024-07-22 22:47:43,460:INFO:           streamlit: 1.33.0
+2024-07-22 22:47:43,460:INFO:             prophet: 1.1.5
+2024-07-22 22:47:43,460:INFO:None
+2024-07-22 22:49:16,392:INFO:Soft dependency imported: prophet: 1.1.5
+2024-07-22 22:49:17,316:INFO:PyCaret TSForecastingExperiment
+2024-07-22 22:49:17,316:INFO:Logging name: ts-default-name
+2024-07-22 22:49:17,316:INFO:ML Usecase: MLUsecase.TIME_SERIES
+2024-07-22 22:49:17,316:INFO:version 3.3.2
+2024-07-22 22:49:17,316:INFO:Initializing setup()
+2024-07-22 22:49:17,316:INFO:self.USI: fb3a
+2024-07-22 22:49:17,316:INFO:self._variable_keys: {'exp_id', 'fh', 'X_train', 'candidate_sps', 'X_test_transformed', 'html_param', 'significant_sps_no_harmonics', 'idx', '_ml_usecase', 'all_sps_to_use', 'log_plots_param', 'y_test', '_available_plots', 'X_test', 'seasonality_present', 'data', 'model_engines', 'gpu_param', 'pipeline', 'memory', 'X', 'enforce_pi', 'y', 'seed', 'X_train_transformed', 'X_transformed', 'gpu_n_jobs_param', 'significant_sps', 'fold_generator', 'index_type', 'y_train', 'strictly_positive', 'approach_type', 'fold_param', 'y_train_transformed', 'logging_param', 'enforce_exogenous', 'USI', 'y_transformed', 'exp_name_log', 'exogenous_present', 'y_test_transformed', 'primary_sp_to_use', 'n_jobs_param'}
+2024-07-22 22:49:17,316:INFO:Checking environment
+2024-07-22 22:49:17,317:INFO:python_version: 3.11.4
+2024-07-22 22:49:17,317:INFO:python_build: ('tags/v3.11.4:d2340ef', 'Jun  7 2023 05:45:37')
+2024-07-22 22:49:17,317:INFO:machine: AMD64
+2024-07-22 22:49:17,330:INFO:platform: Windows-10-10.0.19045-SP0
+2024-07-22 22:49:17,339:INFO:Memory: svmem(total=17125707776, available=8283099136, percent=51.6, used=8842608640, free=8283099136)
+2024-07-22 22:49:17,339:INFO:Physical Core: 4
+2024-07-22 22:49:17,339:INFO:Logical Core: 4
+2024-07-22 22:49:17,339:INFO:Checking libraries
+2024-07-22 22:49:17,339:INFO:System:
+2024-07-22 22:49:17,339:INFO:    python: 3.11.4 (tags/v3.11.4:d2340ef, Jun  7 2023, 05:45:37) [MSC v.1934 64 bit (AMD64)]
+2024-07-22 22:49:17,339:INFO:executable: C:\Users\Rizen3\Desktop\Vamshi\Machine Learning and DSA\MLVenv\Scripts\python.exe
+2024-07-22 22:49:17,339:INFO:   machine: Windows-10-10.0.19045-SP0
+2024-07-22 22:49:17,339:INFO:PyCaret required dependencies:
+2024-07-22 22:49:17,415:INFO:                 pip: 23.1.2
+2024-07-22 22:49:17,415:INFO:          setuptools: 65.5.0
+2024-07-22 22:49:17,415:INFO:             pycaret: 3.3.2
+2024-07-22 22:49:17,415:INFO:             IPython: 8.20.0
+2024-07-22 22:49:17,415:INFO:          ipywidgets: 8.1.3
+2024-07-22 22:49:17,415:INFO:                tqdm: 4.66.1
+2024-07-22 22:49:17,415:INFO:               numpy: 1.26.2
+2024-07-22 22:49:17,415:INFO:              pandas: 2.1.3
+2024-07-22 22:49:17,415:INFO:              jinja2: 3.1.3
+2024-07-22 22:49:17,415:INFO:               scipy: 1.11.4
+2024-07-22 22:49:17,415:INFO:              joblib: 1.3.2
+2024-07-22 22:49:17,415:INFO:             sklearn: 1.4.2
+2024-07-22 22:49:17,415:INFO:                pyod: 2.0.1
+2024-07-22 22:49:17,415:INFO:            imblearn: 0.12.3
+2024-07-22 22:49:17,415:INFO:   category_encoders: 2.6.3
+2024-07-22 22:49:17,415:INFO:            lightgbm: 4.4.0
+2024-07-22 22:49:17,415:INFO:               numba: 0.58.1
+2024-07-22 22:49:17,416:INFO:            requests: 2.31.0
+2024-07-22 22:49:17,416:INFO:          matplotlib: 3.7.5
+2024-07-22 22:49:17,416:INFO:          scikitplot: 0.3.7
+2024-07-22 22:49:17,416:INFO:         yellowbrick: 1.5
+2024-07-22 22:49:17,416:INFO:              plotly: 5.22.0
+2024-07-22 22:49:17,416:INFO:    plotly-resampler: Not installed
+2024-07-22 22:49:17,416:INFO:             kaleido: 0.2.1
+2024-07-22 22:49:17,416:INFO:           schemdraw: 0.15
+2024-07-22 22:49:17,416:INFO:         statsmodels: 0.14.2
+2024-07-22 22:49:17,416:INFO:              sktime: 0.26.0
+2024-07-22 22:49:17,416:INFO:               tbats: 1.1.3
+2024-07-22 22:49:17,416:INFO:            pmdarima: 2.0.4
+2024-07-22 22:49:17,416:INFO:              psutil: 5.9.7
+2024-07-22 22:49:17,416:INFO:          markupsafe: 2.1.3
+2024-07-22 22:49:17,417:INFO:             pickle5: Not installed
+2024-07-22 22:49:17,417:INFO:         cloudpickle: 2.2.1
+2024-07-22 22:49:17,417:INFO:         deprecation: 2.1.0
+2024-07-22 22:49:17,417:INFO:              xxhash: 3.4.1
+2024-07-22 22:49:17,417:INFO:           wurlitzer: Not installed
+2024-07-22 22:49:17,417:INFO:PyCaret optional dependencies:
+2024-07-22 22:49:17,434:INFO:                shap: 0.44.0
+2024-07-22 22:49:17,434:INFO:           interpret: Not installed
+2024-07-22 22:49:17,435:INFO:                umap: Not installed
+2024-07-22 22:49:17,435:INFO:     ydata_profiling: Not installed
+2024-07-22 22:49:17,435:INFO:  explainerdashboard: Not installed
+2024-07-22 22:49:17,435:INFO:             autoviz: Not installed
+2024-07-22 22:49:17,435:INFO:           fairlearn: Not installed
+2024-07-22 22:49:17,435:INFO:          deepchecks: Not installed
+2024-07-22 22:49:17,435:INFO:             xgboost: Not installed
+2024-07-22 22:49:17,435:INFO:            catboost: Not installed
+2024-07-22 22:49:17,435:INFO:              kmodes: Not installed
+2024-07-22 22:49:17,435:INFO:             mlxtend: Not installed
+2024-07-22 22:49:17,435:INFO:       statsforecast: Not installed
+2024-07-22 22:49:17,435:INFO:        tune_sklearn: Not installed
+2024-07-22 22:49:17,435:INFO:                 ray: Not installed
+2024-07-22 22:49:17,435:INFO:            hyperopt: Not installed
+2024-07-22 22:49:17,435:INFO:              optuna: Not installed
+2024-07-22 22:49:17,435:INFO:               skopt: Not installed
+2024-07-22 22:49:17,436:INFO:              mlflow: 2.2.2
+2024-07-22 22:49:17,436:INFO:              gradio: Not installed
+2024-07-22 22:49:17,436:INFO:             fastapi: Not installed
+2024-07-22 22:49:17,436:INFO:             uvicorn: Not installed
+2024-07-22 22:49:17,436:INFO:              m2cgen: Not installed
+2024-07-22 22:49:17,436:INFO:           evidently: Not installed
+2024-07-22 22:49:17,436:INFO:               fugue: Not installed
+2024-07-22 22:49:17,436:INFO:           streamlit: 1.33.0
+2024-07-22 22:49:17,436:INFO:             prophet: 1.1.5
+2024-07-22 22:49:17,436:INFO:None
+2024-07-22 22:50:17,173:INFO:Soft dependency imported: prophet: 1.1.5
+2024-07-22 22:50:18,083:INFO:PyCaret TSForecastingExperiment
+2024-07-22 22:50:18,083:INFO:Logging name: ts-default-name
+2024-07-22 22:50:18,083:INFO:ML Usecase: MLUsecase.TIME_SERIES
+2024-07-22 22:50:18,083:INFO:version 3.3.2
+2024-07-22 22:50:18,083:INFO:Initializing setup()
+2024-07-22 22:50:18,084:INFO:self.USI: 9f17
+2024-07-22 22:50:18,084:INFO:self._variable_keys: {'_available_plots', 'index_type', 'html_param', 'fold_generator', 'y_train_transformed', 'strictly_positive', 'X_test', 'model_engines', 'X', 'primary_sp_to_use', 'all_sps_to_use', 'X_train_transformed', 'log_plots_param', 'X_train', '_ml_usecase', 'seed', 'idx', 'y_transformed', 'X_test_transformed', 'y_test', 'exogenous_present', 'y_test_transformed', 'logging_param', 'seasonality_present', 'data', 'gpu_n_jobs_param', 'fh', 'y_train', 'enforce_pi', 'gpu_param', 'significant_sps_no_harmonics', 'USI', 'significant_sps', 'y', 'X_transformed', 'exp_name_log', 'fold_param', 'approach_type', 'exp_id', 'memory', 'n_jobs_param', 'pipeline', 'enforce_exogenous', 'candidate_sps'}
+2024-07-22 22:50:18,084:INFO:Checking environment
+2024-07-22 22:50:18,084:INFO:python_version: 3.11.4
+2024-07-22 22:50:18,084:INFO:python_build: ('tags/v3.11.4:d2340ef', 'Jun  7 2023 05:45:37')
+2024-07-22 22:50:18,084:INFO:machine: AMD64
+2024-07-22 22:50:18,097:INFO:platform: Windows-10-10.0.19045-SP0
+2024-07-22 22:50:18,101:INFO:Memory: svmem(total=17125707776, available=8280657920, percent=51.6, used=8845049856, free=8280657920)
+2024-07-22 22:50:18,101:INFO:Physical Core: 4
+2024-07-22 22:50:18,101:INFO:Logical Core: 4
+2024-07-22 22:50:18,101:INFO:Checking libraries
+2024-07-22 22:50:18,101:INFO:System:
+2024-07-22 22:50:18,101:INFO:    python: 3.11.4 (tags/v3.11.4:d2340ef, Jun  7 2023, 05:45:37) [MSC v.1934 64 bit (AMD64)]
+2024-07-22 22:50:18,101:INFO:executable: C:\Users\Rizen3\Desktop\Vamshi\Machine Learning and DSA\MLVenv\Scripts\python.exe
+2024-07-22 22:50:18,101:INFO:   machine: Windows-10-10.0.19045-SP0
+2024-07-22 22:50:18,101:INFO:PyCaret required dependencies:
+2024-07-22 22:50:18,175:INFO:                 pip: 23.1.2
+2024-07-22 22:50:18,175:INFO:          setuptools: 65.5.0
+2024-07-22 22:50:18,175:INFO:             pycaret: 3.3.2
+2024-07-22 22:50:18,175:INFO:             IPython: 8.20.0
+2024-07-22 22:50:18,175:INFO:          ipywidgets: 8.1.3
+2024-07-22 22:50:18,175:INFO:                tqdm: 4.66.1
+2024-07-22 22:50:18,175:INFO:               numpy: 1.26.2
+2024-07-22 22:50:18,175:INFO:              pandas: 2.1.3
+2024-07-22 22:50:18,176:INFO:              jinja2: 3.1.3
+2024-07-22 22:50:18,176:INFO:               scipy: 1.11.4
+2024-07-22 22:50:18,176:INFO:              joblib: 1.3.2
+2024-07-22 22:50:18,176:INFO:             sklearn: 1.4.2
+2024-07-22 22:50:18,176:INFO:                pyod: 2.0.1
+2024-07-22 22:50:18,176:INFO:            imblearn: 0.12.3
+2024-07-22 22:50:18,176:INFO:   category_encoders: 2.6.3
+2024-07-22 22:50:18,176:INFO:            lightgbm: 4.4.0
+2024-07-22 22:50:18,176:INFO:               numba: 0.58.1
+2024-07-22 22:50:18,176:INFO:            requests: 2.31.0
+2024-07-22 22:50:18,176:INFO:          matplotlib: 3.7.5
+2024-07-22 22:50:18,176:INFO:          scikitplot: 0.3.7
+2024-07-22 22:50:18,176:INFO:         yellowbrick: 1.5
+2024-07-22 22:50:18,176:INFO:              plotly: 5.22.0
+2024-07-22 22:50:18,176:INFO:    plotly-resampler: Not installed
+2024-07-22 22:50:18,176:INFO:             kaleido: 0.2.1
+2024-07-22 22:50:18,176:INFO:           schemdraw: 0.15
+2024-07-22 22:50:18,176:INFO:         statsmodels: 0.14.2
+2024-07-22 22:50:18,176:INFO:              sktime: 0.26.0
+2024-07-22 22:50:18,176:INFO:               tbats: 1.1.3
+2024-07-22 22:50:18,177:INFO:            pmdarima: 2.0.4
+2024-07-22 22:50:18,177:INFO:              psutil: 5.9.7
+2024-07-22 22:50:18,177:INFO:          markupsafe: 2.1.3
+2024-07-22 22:50:18,177:INFO:             pickle5: Not installed
+2024-07-22 22:50:18,177:INFO:         cloudpickle: 2.2.1
+2024-07-22 22:50:18,177:INFO:         deprecation: 2.1.0
+2024-07-22 22:50:18,177:INFO:              xxhash: 3.4.1
+2024-07-22 22:50:18,177:INFO:           wurlitzer: Not installed
+2024-07-22 22:50:18,177:INFO:PyCaret optional dependencies:
+2024-07-22 22:50:18,195:INFO:                shap: 0.44.0
+2024-07-22 22:50:18,195:INFO:           interpret: Not installed
+2024-07-22 22:50:18,195:INFO:                umap: Not installed
+2024-07-22 22:50:18,195:INFO:     ydata_profiling: Not installed
+2024-07-22 22:50:18,195:INFO:  explainerdashboard: Not installed
+2024-07-22 22:50:18,195:INFO:             autoviz: Not installed
+2024-07-22 22:50:18,195:INFO:           fairlearn: Not installed
+2024-07-22 22:50:18,196:INFO:          deepchecks: Not installed
+2024-07-22 22:50:18,196:INFO:             xgboost: Not installed
+2024-07-22 22:50:18,196:INFO:            catboost: Not installed
+2024-07-22 22:50:18,196:INFO:              kmodes: Not installed
+2024-07-22 22:50:18,196:INFO:             mlxtend: Not installed
+2024-07-22 22:50:18,196:INFO:       statsforecast: Not installed
+2024-07-22 22:50:18,196:INFO:        tune_sklearn: Not installed
+2024-07-22 22:50:18,196:INFO:                 ray: Not installed
+2024-07-22 22:50:18,196:INFO:            hyperopt: Not installed
+2024-07-22 22:50:18,196:INFO:              optuna: Not installed
+2024-07-22 22:50:18,196:INFO:               skopt: Not installed
+2024-07-22 22:50:18,196:INFO:              mlflow: 2.2.2
+2024-07-22 22:50:18,196:INFO:              gradio: Not installed
+2024-07-22 22:50:18,196:INFO:             fastapi: Not installed
+2024-07-22 22:50:18,196:INFO:             uvicorn: Not installed
+2024-07-22 22:50:18,196:INFO:              m2cgen: Not installed
+2024-07-22 22:50:18,196:INFO:           evidently: Not installed
+2024-07-22 22:50:18,196:INFO:               fugue: Not installed
+2024-07-22 22:50:18,196:INFO:           streamlit: 1.33.0
+2024-07-22 22:50:18,196:INFO:             prophet: 1.1.5
+2024-07-22 22:50:18,197:INFO:None
+2024-07-22 22:52:05,242:INFO:Soft dependency imported: prophet: 1.1.5
+2024-07-22 22:52:06,075:INFO:PyCaret TSForecastingExperiment
+2024-07-22 22:52:06,075:INFO:Logging name: ts-default-name
+2024-07-22 22:52:06,075:INFO:ML Usecase: MLUsecase.TIME_SERIES
+2024-07-22 22:52:06,075:INFO:version 3.3.2
+2024-07-22 22:52:06,075:INFO:Initializing setup()
+2024-07-22 22:52:06,076:INFO:self.USI: 7d62
+2024-07-22 22:52:06,076:INFO:self._variable_keys: {'exp_name_log', 'model_engines', 'y_test_transformed', 'pipeline', 'logging_param', '_available_plots', 'X', 'exp_id', 'approach_type', 'seed', 'X_test', 'enforce_pi', 'strictly_positive', 'X_train_transformed', 'significant_sps_no_harmonics', 'html_param', 'y_test', 'memory', 'log_plots_param', 'exogenous_present', 'X_train', 'fold_param', 'seasonality_present', 'X_test_transformed', 'gpu_n_jobs_param', 'data', 'enforce_exogenous', 'y_train_transformed', 'all_sps_to_use', 'gpu_param', 'y', 'y_train', '_ml_usecase', 'n_jobs_param', 'fold_generator', 'index_type', 'significant_sps', 'y_transformed', 'X_transformed', 'primary_sp_to_use', 'USI', 'candidate_sps', 'fh', 'idx'}
+2024-07-22 22:52:06,076:INFO:Checking environment
+2024-07-22 22:52:06,076:INFO:python_version: 3.11.4
+2024-07-22 22:52:06,076:INFO:python_build: ('tags/v3.11.4:d2340ef', 'Jun  7 2023 05:45:37')
+2024-07-22 22:52:06,076:INFO:machine: AMD64
+2024-07-22 22:52:06,091:INFO:platform: Windows-10-10.0.19045-SP0
+2024-07-22 22:52:06,095:INFO:Memory: svmem(total=17125707776, available=8209997824, percent=52.1, used=8915709952, free=8209997824)
+2024-07-22 22:52:06,095:INFO:Physical Core: 4
+2024-07-22 22:52:06,095:INFO:Logical Core: 4
+2024-07-22 22:52:06,095:INFO:Checking libraries
+2024-07-22 22:52:06,095:INFO:System:
+2024-07-22 22:52:06,095:INFO:    python: 3.11.4 (tags/v3.11.4:d2340ef, Jun  7 2023, 05:45:37) [MSC v.1934 64 bit (AMD64)]
+2024-07-22 22:52:06,095:INFO:executable: C:\Users\Rizen3\Desktop\Vamshi\Machine Learning and DSA\MLVenv\Scripts\python.exe
+2024-07-22 22:52:06,095:INFO:   machine: Windows-10-10.0.19045-SP0
+2024-07-22 22:52:06,095:INFO:PyCaret required dependencies:
+2024-07-22 22:52:06,175:INFO:                 pip: 23.1.2
+2024-07-22 22:52:06,175:INFO:          setuptools: 65.5.0
+2024-07-22 22:52:06,175:INFO:             pycaret: 3.3.2
+2024-07-22 22:52:06,176:INFO:             IPython: 8.20.0
+2024-07-22 22:52:06,176:INFO:          ipywidgets: 8.1.3
+2024-07-22 22:52:06,176:INFO:                tqdm: 4.66.1
+2024-07-22 22:52:06,176:INFO:               numpy: 1.26.2
+2024-07-22 22:52:06,176:INFO:              pandas: 2.1.3
+2024-07-22 22:52:06,176:INFO:              jinja2: 3.1.3
+2024-07-22 22:52:06,176:INFO:               scipy: 1.11.4
+2024-07-22 22:52:06,176:INFO:              joblib: 1.3.2
+2024-07-22 22:52:06,176:INFO:             sklearn: 1.4.2
+2024-07-22 22:52:06,176:INFO:                pyod: 2.0.1
+2024-07-22 22:52:06,176:INFO:            imblearn: 0.12.3
+2024-07-22 22:52:06,176:INFO:   category_encoders: 2.6.3
+2024-07-22 22:52:06,176:INFO:            lightgbm: 4.4.0
+2024-07-22 22:52:06,176:INFO:               numba: 0.58.1
+2024-07-22 22:52:06,176:INFO:            requests: 2.31.0
+2024-07-22 22:52:06,176:INFO:          matplotlib: 3.7.5
+2024-07-22 22:52:06,176:INFO:          scikitplot: 0.3.7
+2024-07-22 22:52:06,177:INFO:         yellowbrick: 1.5
+2024-07-22 22:52:06,177:INFO:              plotly: 5.22.0
+2024-07-22 22:52:06,177:INFO:    plotly-resampler: Not installed
+2024-07-22 22:52:06,177:INFO:             kaleido: 0.2.1
+2024-07-22 22:52:06,177:INFO:           schemdraw: 0.15
+2024-07-22 22:52:06,177:INFO:         statsmodels: 0.14.2
+2024-07-22 22:52:06,177:INFO:              sktime: 0.26.0
+2024-07-22 22:52:06,177:INFO:               tbats: 1.1.3
+2024-07-22 22:52:06,177:INFO:            pmdarima: 2.0.4
+2024-07-22 22:52:06,177:INFO:              psutil: 5.9.7
+2024-07-22 22:52:06,177:INFO:          markupsafe: 2.1.3
+2024-07-22 22:52:06,177:INFO:             pickle5: Not installed
+2024-07-22 22:52:06,177:INFO:         cloudpickle: 2.2.1
+2024-07-22 22:52:06,177:INFO:         deprecation: 2.1.0
+2024-07-22 22:52:06,177:INFO:              xxhash: 3.4.1
+2024-07-22 22:52:06,177:INFO:           wurlitzer: Not installed
+2024-07-22 22:52:06,177:INFO:PyCaret optional dependencies:
+2024-07-22 22:52:06,196:INFO:                shap: 0.44.0
+2024-07-22 22:52:06,196:INFO:           interpret: Not installed
+2024-07-22 22:52:06,197:INFO:                umap: Not installed
+2024-07-22 22:52:06,197:INFO:     ydata_profiling: Not installed
+2024-07-22 22:52:06,197:INFO:  explainerdashboard: Not installed
+2024-07-22 22:52:06,197:INFO:             autoviz: Not installed
+2024-07-22 22:52:06,197:INFO:           fairlearn: Not installed
+2024-07-22 22:52:06,197:INFO:          deepchecks: Not installed
+2024-07-22 22:52:06,197:INFO:             xgboost: Not installed
+2024-07-22 22:52:06,197:INFO:            catboost: Not installed
+2024-07-22 22:52:06,198:INFO:              kmodes: Not installed
+2024-07-22 22:52:06,198:INFO:             mlxtend: Not installed
+2024-07-22 22:52:06,198:INFO:       statsforecast: Not installed
+2024-07-22 22:52:06,198:INFO:        tune_sklearn: Not installed
+2024-07-22 22:52:06,198:INFO:                 ray: Not installed
+2024-07-22 22:52:06,198:INFO:            hyperopt: Not installed
+2024-07-22 22:52:06,198:INFO:              optuna: Not installed
+2024-07-22 22:52:06,198:INFO:               skopt: Not installed
+2024-07-22 22:52:06,199:INFO:              mlflow: 2.2.2
+2024-07-22 22:52:06,199:INFO:              gradio: Not installed
+2024-07-22 22:52:06,199:INFO:             fastapi: Not installed
+2024-07-22 22:52:06,199:INFO:             uvicorn: Not installed
+2024-07-22 22:52:06,199:INFO:              m2cgen: Not installed
+2024-07-22 22:52:06,199:INFO:           evidently: Not installed
+2024-07-22 22:52:06,199:INFO:               fugue: Not installed
+2024-07-22 22:52:06,199:INFO:           streamlit: 1.33.0
+2024-07-22 22:52:06,199:INFO:             prophet: 1.1.5
+2024-07-22 22:52:06,199:INFO:None
+2024-07-22 22:52:06,238:INFO:Set Forecast Horizon.
+2024-07-22 22:52:06,239:INFO:Set up Train-Test Splits.
+2024-07-22 22:53:14,951:INFO:Soft dependency imported: prophet: 1.1.5
+2024-07-22 22:53:15,719:INFO:PyCaret TSForecastingExperiment
+2024-07-22 22:53:15,719:INFO:Logging name: ts-default-name
+2024-07-22 22:53:15,719:INFO:ML Usecase: MLUsecase.TIME_SERIES
+2024-07-22 22:53:15,719:INFO:version 3.3.2
+2024-07-22 22:53:15,719:INFO:Initializing setup()
+2024-07-22 22:53:15,719:INFO:self.USI: 515f
+2024-07-22 22:53:15,719:INFO:self._variable_keys: {'approach_type', 'seed', 'model_engines', 'enforce_pi', 'fh', 'gpu_n_jobs_param', 'html_param', 'X_transformed', 'logging_param', 'seasonality_present', 'y_transformed', 'exp_name_log', 'y_test', 'all_sps_to_use', 'pipeline', 'exogenous_present', 'USI', 'X_test', 'idx', 'data', 'X_test_transformed', 'primary_sp_to_use', 'fold_param', 'X_train', 'log_plots_param', 'y_train', 'y_train_transformed', 'gpu_param', 'y_test_transformed', 'strictly_positive', 'significant_sps', 'significant_sps_no_harmonics', 'X_train_transformed', 'candidate_sps', 'index_type', 'y', 'enforce_exogenous', 'memory', 'fold_generator', 'n_jobs_param', '_ml_usecase', 'exp_id', '_available_plots', 'X'}
+2024-07-22 22:53:15,719:INFO:Checking environment
+2024-07-22 22:53:15,719:INFO:python_version: 3.11.4
+2024-07-22 22:53:15,719:INFO:python_build: ('tags/v3.11.4:d2340ef', 'Jun  7 2023 05:45:37')
+2024-07-22 22:53:15,720:INFO:machine: AMD64
+2024-07-22 22:53:15,733:INFO:platform: Windows-10-10.0.19045-SP0
+2024-07-22 22:53:15,737:INFO:Memory: svmem(total=17125707776, available=8199720960, percent=52.1, used=8925986816, free=8199720960)
+2024-07-22 22:53:15,737:INFO:Physical Core: 4
+2024-07-22 22:53:15,737:INFO:Logical Core: 4
+2024-07-22 22:53:15,737:INFO:Checking libraries
+2024-07-22 22:53:15,737:INFO:System:
+2024-07-22 22:53:15,737:INFO:    python: 3.11.4 (tags/v3.11.4:d2340ef, Jun  7 2023, 05:45:37) [MSC v.1934 64 bit (AMD64)]
+2024-07-22 22:53:15,737:INFO:executable: C:\Users\Rizen3\Desktop\Vamshi\Machine Learning and DSA\MLVenv\Scripts\python.exe
+2024-07-22 22:53:15,737:INFO:   machine: Windows-10-10.0.19045-SP0
+2024-07-22 22:53:15,737:INFO:PyCaret required dependencies:
+2024-07-22 22:53:15,811:INFO:                 pip: 23.1.2
+2024-07-22 22:53:15,811:INFO:          setuptools: 65.5.0
+2024-07-22 22:53:15,811:INFO:             pycaret: 3.3.2
+2024-07-22 22:53:15,812:INFO:             IPython: 8.20.0
+2024-07-22 22:53:15,812:INFO:          ipywidgets: 8.1.3
+2024-07-22 22:53:15,812:INFO:                tqdm: 4.66.1
+2024-07-22 22:53:15,812:INFO:               numpy: 1.26.2
+2024-07-22 22:53:15,812:INFO:              pandas: 2.1.3
+2024-07-22 22:53:15,812:INFO:              jinja2: 3.1.3
+2024-07-22 22:53:15,812:INFO:               scipy: 1.11.4
+2024-07-22 22:53:15,812:INFO:              joblib: 1.3.2
+2024-07-22 22:53:15,812:INFO:             sklearn: 1.4.2
+2024-07-22 22:53:15,812:INFO:                pyod: 2.0.1
+2024-07-22 22:53:15,812:INFO:            imblearn: 0.12.3
+2024-07-22 22:53:15,812:INFO:   category_encoders: 2.6.3
+2024-07-22 22:53:15,812:INFO:            lightgbm: 4.4.0
+2024-07-22 22:53:15,812:INFO:               numba: 0.58.1
+2024-07-22 22:53:15,813:INFO:            requests: 2.31.0
+2024-07-22 22:53:15,813:INFO:          matplotlib: 3.7.5
+2024-07-22 22:53:15,813:INFO:          scikitplot: 0.3.7
+2024-07-22 22:53:15,813:INFO:         yellowbrick: 1.5
+2024-07-22 22:53:15,813:INFO:              plotly: 5.22.0
+2024-07-22 22:53:15,813:INFO:    plotly-resampler: Not installed
+2024-07-22 22:53:15,813:INFO:             kaleido: 0.2.1
+2024-07-22 22:53:15,813:INFO:           schemdraw: 0.15
+2024-07-22 22:53:15,813:INFO:         statsmodels: 0.14.2
+2024-07-22 22:53:15,813:INFO:              sktime: 0.26.0
+2024-07-22 22:53:15,813:INFO:               tbats: 1.1.3
+2024-07-22 22:53:15,813:INFO:            pmdarima: 2.0.4
+2024-07-22 22:53:15,813:INFO:              psutil: 5.9.7
+2024-07-22 22:53:15,813:INFO:          markupsafe: 2.1.3
+2024-07-22 22:53:15,814:INFO:             pickle5: Not installed
+2024-07-22 22:53:15,814:INFO:         cloudpickle: 2.2.1
+2024-07-22 22:53:15,814:INFO:         deprecation: 2.1.0
+2024-07-22 22:53:15,814:INFO:              xxhash: 3.4.1
+2024-07-22 22:53:15,814:INFO:           wurlitzer: Not installed
+2024-07-22 22:53:15,814:INFO:PyCaret optional dependencies:
+2024-07-22 22:53:15,831:INFO:                shap: 0.44.0
+2024-07-22 22:53:15,831:INFO:           interpret: Not installed
+2024-07-22 22:53:15,832:INFO:                umap: Not installed
+2024-07-22 22:53:15,832:INFO:     ydata_profiling: Not installed
+2024-07-22 22:53:15,832:INFO:  explainerdashboard: Not installed
+2024-07-22 22:53:15,832:INFO:             autoviz: Not installed
+2024-07-22 22:53:15,832:INFO:           fairlearn: Not installed
+2024-07-22 22:53:15,832:INFO:          deepchecks: Not installed
+2024-07-22 22:53:15,832:INFO:             xgboost: Not installed
+2024-07-22 22:53:15,832:INFO:            catboost: Not installed
+2024-07-22 22:53:15,832:INFO:              kmodes: Not installed
+2024-07-22 22:53:15,832:INFO:             mlxtend: Not installed
+2024-07-22 22:53:15,832:INFO:       statsforecast: Not installed
+2024-07-22 22:53:15,832:INFO:        tune_sklearn: Not installed
+2024-07-22 22:53:15,832:INFO:                 ray: Not installed
+2024-07-22 22:53:15,832:INFO:            hyperopt: Not installed
+2024-07-22 22:53:15,832:INFO:              optuna: Not installed
+2024-07-22 22:53:15,832:INFO:               skopt: Not installed
+2024-07-22 22:53:15,832:INFO:              mlflow: 2.2.2
+2024-07-22 22:53:15,832:INFO:              gradio: Not installed
+2024-07-22 22:53:15,832:INFO:             fastapi: Not installed
+2024-07-22 22:53:15,832:INFO:             uvicorn: Not installed
+2024-07-22 22:53:15,833:INFO:              m2cgen: Not installed
+2024-07-22 22:53:15,833:INFO:           evidently: Not installed
+2024-07-22 22:53:15,833:INFO:               fugue: Not installed
+2024-07-22 22:53:15,833:INFO:           streamlit: 1.33.0
+2024-07-22 22:53:15,833:INFO:             prophet: 1.1.5
+2024-07-22 22:53:15,833:INFO:None
+2024-07-22 22:53:15,871:INFO:Set Forecast Horizon.
+2024-07-22 22:53:15,871:INFO:Set up Train-Test Splits.
+2024-07-22 22:53:15,882:INFO:Preparing preprocessing pipeline...
+2024-07-22 22:53:15,882:INFO:Set up imputation for Target variable(s).
+2024-07-22 22:53:15,961:INFO:Finished creating preprocessing pipeline.
+2024-07-22 22:53:15,974:INFO:Pipeline: ForecastingPipeline(steps=[('forecaster',
+                            TransformedTargetForecaster(steps=[('transformer_target',
+                                                                TransformerPipeline(steps=[('numerical_imputer',
+                                                                                            Imputer(method='mean',
+                                                                                                    random_state=123))])),
+                                                               ('model',
+                                                                DummyForecaster())]))])
+2024-07-22 22:53:15,974:INFO:Set up Seasonal Period.
+2024-07-22 22:53:16,063:INFO:Setting the seasonal component type - 'add' or 'mul'.
+2024-07-22 22:53:16,064:INFO:Checking if data is strictly positive.
+2024-07-22 22:53:16,260:INFO:Creating final display dataframe.
+2024-07-22 22:53:16,289:INFO:Setup Display Container:                                           Description                                              Value
+0                                          session_id                                                123
+1                                              Target                                              Close
+2                                            Approach                                         Univariate
+3                                 Exogenous Variables                                        Not Present
+4                                 Original data shape                                          (6747, 1)
+5                              Transformed data shape                                          (6747, 1)
+6                         Transformed train set shape                                          (6735, 1)
+7                          Transformed test set shape                                            (12, 1)
+8                            Rows with missing values                                              76.4%
+9                                      Fold Generator                            ExpandingWindowSplitter
+10                                        Fold Number                                                  3
+11                        Enforce Prediction Interval                                              False
+12                    Splits used for hyperparameters                                                all
+13                    User Defined Seasonal Period(s)                                               None
+14                            Ignore Seasonality Test                                              False
+15                         Seasonality Detection Algo                                               auto
+16                             Max Period to Consider                                                 60
+17                          Seasonal Period(s) Tested  [7, 14, 21, 28, 35, 42, 49, 56, 6, 29, 13, 8, 15]
+18                     Significant Seasonal Period(s)  [7, 14, 21, 28, 35, 42, 49, 56, 6, 29, 13, 8, 15]
+19   Significant Seasonal Period(s) without Harmonics                       [56, 42, 35, 49, 29, 13, 15]
+20                                   Remove Harmonics                                              False
+21                             Harmonics Order Method                                       harmonic_max
+22                           Num Seasonalities to Use                                                  1
+23                           All Seasonalities to Use                                                [7]
+24                                Primary Seasonality                                                  7
+25                                Seasonality Present                                               True
+26                                   Seasonality Type                                                mul
+27                           Target Strictly Positive                                               True
+28                                 Target White Noise                                                 No
+29                                      Recommended d                                                  1
+30                             Recommended Seasonal D                                                  0
+31                                         Preprocess                                               True
+32                      Numerical Imputation (Target)                                               mean
+33                            Transformation (Target)                                               None
+34                                   Scaling (Target)                                               None
+35  Feature Engineering (Target) - Reduced Regression                                              False
+36                                           CPU Jobs                                                 -1
+37                                            Use GPU                                              False
+38                                     Log Experiment                                              False
+39                                    Experiment Name                                    ts-default-name
+40                                                USI                                               515f
+2024-07-22 22:53:16,299:INFO:Engine successfully changes for model 'auto_arima' to 'pmdarima'.
+2024-07-22 22:53:16,357:INFO:Soft dependency imported: prophet: 1.1.5
+2024-07-22 22:53:16,407:INFO:Engine for model 'lr_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,407:INFO:Engine for model 'en_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,407:INFO:Engine for model 'ridge_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,408:INFO:Engine for model 'lasso_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,408:INFO:Engine for model 'llar_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,408:INFO:Engine for model 'br_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,409:INFO:Engine for model 'huber_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,412:INFO:Engine for model 'omp_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,414:INFO:Engine for model 'knn_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,414:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,415:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,415:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,415:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,416:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,416:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,416:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,416:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,416:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,417:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,417:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,417:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,421:INFO:Soft dependency imported: prophet: 1.1.5
+2024-07-22 22:53:16,421:INFO:Engine for model 'lr_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,422:INFO:Engine for model 'en_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,422:INFO:Engine for model 'ridge_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,422:INFO:Engine for model 'lasso_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,423:INFO:Engine for model 'llar_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,423:INFO:Engine for model 'br_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,423:INFO:Engine for model 'huber_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,425:INFO:Engine for model 'omp_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,427:INFO:Engine for model 'knn_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,427:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,428:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,428:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,429:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,429:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,430:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,430:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,430:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,430:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,430:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,430:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,430:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,431:INFO:Engine successfully changes for model 'lr_cds_dt' to 'sklearn'.
+2024-07-22 22:53:16,434:INFO:Soft dependency imported: prophet: 1.1.5
+2024-07-22 22:53:16,435:INFO:Engine for model 'en_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,435:INFO:Engine for model 'ridge_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,435:INFO:Engine for model 'lasso_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,436:INFO:Engine for model 'llar_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,436:INFO:Engine for model 'br_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,436:INFO:Engine for model 'huber_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,438:INFO:Engine for model 'omp_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,439:INFO:Engine for model 'knn_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,440:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,440:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,440:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,441:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,441:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,442:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,442:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,442:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,442:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,443:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,443:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,443:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,446:INFO:Soft dependency imported: prophet: 1.1.5
+2024-07-22 22:53:16,447:INFO:Engine for model 'en_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,447:INFO:Engine for model 'ridge_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,448:INFO:Engine for model 'lasso_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,448:INFO:Engine for model 'llar_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,449:INFO:Engine for model 'br_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,449:INFO:Engine for model 'huber_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,451:INFO:Engine for model 'omp_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,452:INFO:Engine for model 'knn_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,453:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,453:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,453:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,454:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,454:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,454:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,454:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,455:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,455:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,455:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,455:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,455:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,455:INFO:Engine successfully changes for model 'en_cds_dt' to 'sklearn'.
+2024-07-22 22:53:16,458:INFO:Soft dependency imported: prophet: 1.1.5
+2024-07-22 22:53:16,459:INFO:Engine for model 'ridge_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,459:INFO:Engine for model 'lasso_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,460:INFO:Engine for model 'llar_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,460:INFO:Engine for model 'br_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,460:INFO:Engine for model 'huber_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,462:INFO:Engine for model 'omp_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,463:INFO:Engine for model 'knn_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,464:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,464:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,465:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,465:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,465:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,466:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,466:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,466:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,466:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,466:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,466:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,466:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,469:INFO:Soft dependency imported: prophet: 1.1.5
+2024-07-22 22:53:16,470:INFO:Engine for model 'ridge_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,471:INFO:Engine for model 'lasso_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,471:INFO:Engine for model 'llar_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,471:INFO:Engine for model 'br_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,472:INFO:Engine for model 'huber_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,473:INFO:Engine for model 'omp_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,475:INFO:Engine for model 'knn_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,475:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,476:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,476:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,476:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,477:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,477:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,477:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,477:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,477:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,477:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,477:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,478:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,478:INFO:Engine successfully changes for model 'ridge_cds_dt' to 'sklearn'.
+2024-07-22 22:53:16,481:INFO:Soft dependency imported: prophet: 1.1.5
+2024-07-22 22:53:16,481:INFO:Engine for model 'lasso_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,482:INFO:Engine for model 'llar_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,482:INFO:Engine for model 'br_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,482:INFO:Engine for model 'huber_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,484:INFO:Engine for model 'omp_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,485:INFO:Engine for model 'knn_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,486:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,486:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,486:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,487:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,487:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,488:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,488:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,488:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,488:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,488:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,489:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,489:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,492:INFO:Soft dependency imported: prophet: 1.1.5
+2024-07-22 22:53:16,493:INFO:Engine for model 'lasso_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,494:INFO:Engine for model 'llar_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,494:INFO:Engine for model 'br_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,495:INFO:Engine for model 'huber_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,497:INFO:Engine for model 'omp_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,499:INFO:Engine for model 'knn_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,499:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,500:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,500:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,500:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,501:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,501:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,501:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,501:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,501:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,502:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,502:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,502:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,502:INFO:Engine successfully changes for model 'lasso_cds_dt' to 'sklearn'.
+2024-07-22 22:53:16,506:INFO:Soft dependency imported: prophet: 1.1.5
+2024-07-22 22:53:16,507:INFO:Engine for model 'llar_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,508:INFO:Engine for model 'br_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,508:INFO:Engine for model 'huber_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,510:INFO:Engine for model 'omp_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,512:INFO:Engine for model 'knn_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,513:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,513:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,514:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,514:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,514:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,515:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,515:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,515:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,515:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,515:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,515:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,516:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,519:INFO:Soft dependency imported: prophet: 1.1.5
+2024-07-22 22:53:16,521:INFO:Engine for model 'llar_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,521:INFO:Engine for model 'br_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,522:INFO:Engine for model 'huber_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,524:INFO:Engine for model 'omp_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,526:INFO:Engine for model 'knn_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,526:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,527:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,527:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,528:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,528:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,528:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,528:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,528:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,528:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,529:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,529:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,529:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,529:INFO:Engine successfully changes for model 'lar_cds_dt' to 'sklearn'.
+2024-07-22 22:53:16,532:INFO:Soft dependency imported: prophet: 1.1.5
+2024-07-22 22:53:16,534:INFO:Engine for model 'llar_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,534:INFO:Engine for model 'br_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,534:INFO:Engine for model 'huber_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,537:INFO:Engine for model 'omp_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,539:INFO:Engine for model 'knn_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,540:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,540:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,541:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,541:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,542:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,543:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,543:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,544:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,544:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,544:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,544:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,545:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,548:INFO:Soft dependency imported: prophet: 1.1.5
+2024-07-22 22:53:16,549:INFO:Engine for model 'llar_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,550:INFO:Engine for model 'br_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,550:INFO:Engine for model 'huber_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,552:INFO:Engine for model 'omp_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,555:INFO:Engine for model 'knn_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,555:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,556:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,557:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,557:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,557:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,558:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,558:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,558:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,558:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,558:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,558:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,558:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,558:INFO:Engine successfully changes for model 'llar_cds_dt' to 'sklearn'.
+2024-07-22 22:53:16,561:INFO:Soft dependency imported: prophet: 1.1.5
+2024-07-22 22:53:16,563:INFO:Engine for model 'br_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,563:INFO:Engine for model 'huber_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,565:INFO:Engine for model 'omp_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,567:INFO:Engine for model 'knn_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,567:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,567:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,568:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,568:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,569:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,569:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,569:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,569:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,569:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,570:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,570:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,570:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,573:INFO:Soft dependency imported: prophet: 1.1.5
+2024-07-22 22:53:16,575:INFO:Engine for model 'br_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,576:INFO:Engine for model 'huber_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,578:INFO:Engine for model 'omp_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,579:INFO:Engine for model 'knn_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,580:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,580:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,581:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,581:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,582:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,582:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,582:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,582:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,582:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,583:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,583:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,583:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,583:INFO:Engine successfully changes for model 'br_cds_dt' to 'sklearn'.
+2024-07-22 22:53:16,586:INFO:Soft dependency imported: prophet: 1.1.5
+2024-07-22 22:53:16,589:INFO:Engine for model 'huber_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,591:INFO:Engine for model 'omp_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,592:INFO:Engine for model 'knn_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,593:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,593:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,594:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,594:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,594:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,594:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,595:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,595:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,595:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,595:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,595:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,595:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,598:INFO:Soft dependency imported: prophet: 1.1.5
+2024-07-22 22:53:16,601:INFO:Engine for model 'huber_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,603:INFO:Engine for model 'omp_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,605:INFO:Engine for model 'knn_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,606:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,606:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,607:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,608:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,608:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,609:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,609:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,609:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,609:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,609:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,609:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,610:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,610:INFO:Engine successfully changes for model 'huber_cds_dt' to 'sklearn'.
+2024-07-22 22:53:16,614:INFO:Soft dependency imported: prophet: 1.1.5
+2024-07-22 22:53:16,618:INFO:Engine for model 'omp_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,620:INFO:Engine for model 'knn_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,620:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,621:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,621:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,622:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,622:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,622:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,622:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,623:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,623:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,623:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,623:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,623:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,627:INFO:Soft dependency imported: prophet: 1.1.5
+2024-07-22 22:53:16,631:INFO:Engine for model 'omp_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,632:INFO:Engine for model 'knn_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,632:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,633:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,633:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,633:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,634:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,634:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,634:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,634:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,634:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,635:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,635:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,635:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,635:INFO:Engine successfully changes for model 'par_cds_dt' to 'sklearn'.
+2024-07-22 22:53:16,638:INFO:Soft dependency imported: prophet: 1.1.5
+2024-07-22 22:53:16,641:INFO:Engine for model 'omp_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,643:INFO:Engine for model 'knn_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,644:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,644:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,645:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,645:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,645:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,645:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,646:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,646:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,646:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,646:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,646:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,646:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,756:INFO:Soft dependency imported: prophet: 1.1.5
+2024-07-22 22:53:16,760:INFO:Engine for model 'omp_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,761:INFO:Engine for model 'knn_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,762:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,762:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,762:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,763:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,763:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,763:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,764:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,764:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,764:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,764:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,764:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,764:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,764:INFO:Engine successfully changes for model 'omp_cds_dt' to 'sklearn'.
+2024-07-22 22:53:16,768:INFO:Soft dependency imported: prophet: 1.1.5
+2024-07-22 22:53:16,773:INFO:Engine for model 'knn_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,774:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,774:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,775:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,775:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,776:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,776:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,776:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,776:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,776:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,777:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,777:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,777:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,780:INFO:Soft dependency imported: prophet: 1.1.5
+2024-07-22 22:53:16,785:INFO:Engine for model 'knn_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,785:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,786:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,786:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,786:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,787:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,787:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,787:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,787:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,787:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,788:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,788:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,788:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,788:INFO:Engine successfully changes for model 'knn_cds_dt' to 'sklearn'.
+2024-07-22 22:53:16,791:INFO:Soft dependency imported: prophet: 1.1.5
+2024-07-22 22:53:16,796:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,796:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,797:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,797:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,797:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,798:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,798:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,798:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,798:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,798:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,798:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,798:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,802:INFO:Soft dependency imported: prophet: 1.1.5
+2024-07-22 22:53:16,808:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,809:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,809:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,810:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,810:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,810:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,810:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,810:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,810:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,811:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,811:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,811:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,811:INFO:Engine successfully changes for model 'dt_cds_dt' to 'sklearn'.
+2024-07-22 22:53:16,814:INFO:Soft dependency imported: prophet: 1.1.5
+2024-07-22 22:53:16,819:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,820:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,820:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,820:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,821:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,821:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,821:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,821:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,821:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,821:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,821:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,824:INFO:Soft dependency imported: prophet: 1.1.5
+2024-07-22 22:53:16,829:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,830:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,830:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,830:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,831:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,831:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,831:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,831:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,832:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,832:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,832:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,832:INFO:Engine successfully changes for model 'rf_cds_dt' to 'sklearn'.
+2024-07-22 22:53:16,836:INFO:Soft dependency imported: prophet: 1.1.5
+2024-07-22 22:53:16,842:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,843:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,843:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,843:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,843:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,843:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,843:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,844:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,844:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,844:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,847:INFO:Soft dependency imported: prophet: 1.1.5
+2024-07-22 22:53:16,854:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,855:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,855:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,855:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,855:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,856:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,856:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,856:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,856:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,856:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,856:INFO:Engine successfully changes for model 'et_cds_dt' to 'sklearn'.
+2024-07-22 22:53:16,859:INFO:Soft dependency imported: prophet: 1.1.5
+2024-07-22 22:53:16,866:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,867:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,867:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,867:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,867:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,867:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,868:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,868:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,868:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,871:INFO:Soft dependency imported: prophet: 1.1.5
+2024-07-22 22:53:16,877:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,877:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,877:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,877:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,877:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,877:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,878:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,878:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,878:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,879:INFO:Engine successfully changes for model 'gbr_cds_dt' to 'sklearn'.
+2024-07-22 22:53:16,883:INFO:Soft dependency imported: prophet: 1.1.5
+2024-07-22 22:53:16,891:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,891:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,891:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,892:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,892:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,892:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,892:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,892:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,896:INFO:Soft dependency imported: prophet: 1.1.5
+2024-07-22 22:53:16,902:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,902:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,902:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,902:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,902:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,903:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,903:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,903:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,903:INFO:Engine successfully changes for model 'ada_cds_dt' to 'sklearn'.
+2024-07-22 22:53:16,906:INFO:Soft dependency imported: prophet: 1.1.5
+2024-07-22 22:53:16,913:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,914:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,914:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,914:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,914:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,914:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,914:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,918:INFO:Soft dependency imported: prophet: 1.1.5
+2024-07-22 22:53:16,924:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,925:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,925:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,925:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,925:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,925:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,925:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,926:INFO:Engine successfully changes for model 'xgboost_cds_dt' to 'sklearn'.
+2024-07-22 22:53:16,929:INFO:Soft dependency imported: prophet: 1.1.5
+2024-07-22 22:53:16,936:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,936:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,936:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,936:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,937:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,937:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,940:INFO:Soft dependency imported: prophet: 1.1.5
+2024-07-22 22:53:16,946:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,946:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,946:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,946:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,946:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,946:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,947:INFO:Engine successfully changes for model 'lightgbm_cds_dt' to 'sklearn'.
+2024-07-22 22:53:16,949:INFO:Soft dependency imported: prophet: 1.1.5
+2024-07-22 22:53:16,955:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,955:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,956:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,956:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,956:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,960:INFO:Soft dependency imported: prophet: 1.1.5
+2024-07-22 22:53:16,967:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,968:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,968:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2024-07-22 22:53:16,968:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,968:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,968:INFO:Engine successfully changes for model 'catboost_cds_dt' to 'sklearn'.
+2024-07-22 22:53:16,971:INFO:Soft dependency imported: prophet: 1.1.5
+2024-07-22 22:53:16,979:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,979:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,979:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,979:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,983:INFO:Soft dependency imported: prophet: 1.1.5
+2024-07-22 22:53:16,988:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,988:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,989:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,989:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:16,993:INFO:Soft dependency imported: prophet: 1.1.5
+2024-07-22 22:53:17,000:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:17,000:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:17,001:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:17,001:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:17,004:INFO:Soft dependency imported: prophet: 1.1.5
+2024-07-22 22:53:17,012:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:17,012:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:17,012:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:17,012:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-07-22 22:53:17,013:INFO:setup() successfully completed in 1.3s...............
+2024-07-22 22:53:17,013:INFO:Initializing compare_models()
+2024-07-22 22:53:17,013:INFO:compare_models(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x000001F8E676B710>, include=None, exclude=None, fold=3, round=4, cross_validation=True, sort=MASE, n_select=1, budget_time=None, turbo=True, errors=ignore, fit_kwargs=None, groups=None, experiment_custom_tags=None, probability_threshold=None, verbose=True, parallel=None, caller_params={'self': <pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x000001F8E676B710>, 'include': None, 'exclude': None, 'fold': 3, 'round': 4, 'cross_validation': True, 'sort': 'MASE', 'n_select': 1, 'budget_time': None, 'turbo': True, 'errors': 'ignore', 'fit_kwargs': None, 'experiment_custom_tags': None, 'engine': None, 'verbose': True, 'parallel': None, '__class__': <class 'pycaret.time_series.forecasting.oop.TSForecastingExperiment'>})
+2024-07-22 22:53:17,013:INFO:Checking exceptions
+2024-07-22 22:53:17,015:INFO:Preparing display monitor
+2024-07-22 22:53:17,027:INFO:Initializing Naive Forecaster
+2024-07-22 22:53:17,027:INFO:Total runtime is 0.0 minutes
+2024-07-22 22:53:17,027:INFO:SubProcess create_model() called ==================================
+2024-07-22 22:53:17,027:INFO:Initializing create_model()
+2024-07-22 22:53:17,027:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x000001F8E676B710>, estimator=naive, fold=3, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001F8E8F5D690>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-07-22 22:53:17,027:INFO:Checking exceptions
+2024-07-22 22:53:17,027:INFO:Importing libraries
+2024-07-22 22:53:17,028:INFO:Copying training dataset
+2024-07-22 22:53:17,032:INFO:Defining folds
+2024-07-22 22:53:17,033:INFO:Declaring metric variables
+2024-07-22 22:53:17,033:INFO:Importing untrained model
+2024-07-22 22:53:17,034:INFO:Naive Forecaster Imported successfully
+2024-07-22 22:53:17,035:INFO:Starting cross validation
+2024-07-22 22:53:17,037:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], dtype='int32', is_relative=True),
+                        initial_window=6699, step_length=12), n_jobs=-1
+2024-07-22 22:53:22,486:WARNING:C:\Users\Rizen3\Desktop\Vamshi\Machine Learning and DSA\MLVenv\Lib\site-packages\sklearn\metrics\_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2024-07-22 22:53:22,487:WARNING:C:\Users\Rizen3\Desktop\Vamshi\Machine Learning and DSA\MLVenv\Lib\site-packages\sklearn\metrics\_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2024-07-22 22:53:22,557:WARNING:C:\Users\Rizen3\Desktop\Vamshi\Machine Learning and DSA\MLVenv\Lib\site-packages\sklearn\metrics\_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2024-07-22 22:53:22,558:WARNING:C:\Users\Rizen3\Desktop\Vamshi\Machine Learning and DSA\MLVenv\Lib\site-packages\sklearn\metrics\_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2024-07-22 22:53:22,597:WARNING:C:\Users\Rizen3\Desktop\Vamshi\Machine Learning and DSA\MLVenv\Lib\site-packages\sklearn\metrics\_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2024-07-22 22:53:22,598:WARNING:C:\Users\Rizen3\Desktop\Vamshi\Machine Learning and DSA\MLVenv\Lib\site-packages\sklearn\metrics\_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2024-07-22 22:53:22,616:INFO:Calculating mean and std
+2024-07-22 22:53:22,617:INFO:Creating metrics dataframe
+2024-07-22 22:53:22,624:INFO:Uploading results into container
+2024-07-22 22:53:22,624:INFO:Uploading model into container now
+2024-07-22 22:53:22,624:INFO:_master_model_container: 1
+2024-07-22 22:53:22,625:INFO:_display_container: 2
+2024-07-22 22:53:22,625:INFO:NaiveForecaster()
+2024-07-22 22:53:22,625:INFO:create_model() successfully completed......................................
+2024-07-22 22:53:22,739:INFO:SubProcess create_model() end ==================================
+2024-07-22 22:53:22,739:INFO:Creating metrics dataframe
+2024-07-22 22:53:22,742:INFO:Initializing Grand Means Forecaster
+2024-07-22 22:53:22,742:INFO:Total runtime is 0.09525132973988851 minutes
+2024-07-22 22:53:22,742:INFO:SubProcess create_model() called ==================================
+2024-07-22 22:53:22,742:INFO:Initializing create_model()
+2024-07-22 22:53:22,742:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x000001F8E676B710>, estimator=grand_means, fold=3, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001F8E8F5D690>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-07-22 22:53:22,742:INFO:Checking exceptions
+2024-07-22 22:53:22,742:INFO:Importing libraries
+2024-07-22 22:53:22,742:INFO:Copying training dataset
+2024-07-22 22:53:22,746:INFO:Defining folds
+2024-07-22 22:53:22,747:INFO:Declaring metric variables
+2024-07-22 22:53:22,747:INFO:Importing untrained model
+2024-07-22 22:53:22,748:INFO:Grand Means Forecaster Imported successfully
+2024-07-22 22:53:22,749:INFO:Starting cross validation
+2024-07-22 22:53:22,750:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], dtype='int32', is_relative=True),
+                        initial_window=6699, step_length=12), n_jobs=-1
+2024-07-22 22:53:22,857:WARNING:C:\Users\Rizen3\Desktop\Vamshi\Machine Learning and DSA\MLVenv\Lib\site-packages\sklearn\metrics\_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2024-07-22 22:53:22,857:WARNING:C:\Users\Rizen3\Desktop\Vamshi\Machine Learning and DSA\MLVenv\Lib\site-packages\sklearn\metrics\_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2024-07-22 22:53:22,861:WARNING:C:\Users\Rizen3\Desktop\Vamshi\Machine Learning and DSA\MLVenv\Lib\site-packages\sklearn\metrics\_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2024-07-22 22:53:22,862:WARNING:C:\Users\Rizen3\Desktop\Vamshi\Machine Learning and DSA\MLVenv\Lib\site-packages\sklearn\metrics\_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2024-07-22 22:53:26,401:WARNING:C:\Users\Rizen3\Desktop\Vamshi\Machine Learning and DSA\MLVenv\Lib\site-packages\sklearn\metrics\_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2024-07-22 22:53:26,402:WARNING:C:\Users\Rizen3\Desktop\Vamshi\Machine Learning and DSA\MLVenv\Lib\site-packages\sklearn\metrics\_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2024-07-22 22:53:26,410:INFO:Calculating mean and std
+2024-07-22 22:53:26,411:INFO:Creating metrics dataframe
+2024-07-22 22:53:26,417:INFO:Uploading results into container
+2024-07-22 22:53:26,417:INFO:Uploading model into container now
+2024-07-22 22:53:26,417:INFO:_master_model_container: 2
+2024-07-22 22:53:26,417:INFO:_display_container: 2
+2024-07-22 22:53:26,418:INFO:NaiveForecaster(strategy='mean')
+2024-07-22 22:53:26,418:INFO:create_model() successfully completed......................................
+2024-07-22 22:53:26,537:WARNING:create_model() for NaiveForecaster(strategy='mean') raised an exception or returned all 0.0, trying without fit_kwargs:
+2024-07-22 22:53:26,539:WARNING:Traceback (most recent call last):
+  File "C:\Users\Rizen3\Desktop\Vamshi\Machine Learning and DSA\MLVenv\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 797, in compare_models
+    np.sum(
+AssertionError
+
+2024-07-22 22:53:26,540:INFO:Initializing create_model()
+2024-07-22 22:53:26,540:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x000001F8E676B710>, estimator=grand_means, fold=3, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001F8E8F5D690>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-07-22 22:53:26,540:INFO:Checking exceptions
+2024-07-22 22:53:26,540:INFO:Importing libraries
+2024-07-22 22:53:26,540:INFO:Copying training dataset
+2024-07-22 22:53:26,544:INFO:Defining folds
+2024-07-22 22:53:26,546:INFO:Declaring metric variables
+2024-07-22 22:53:26,546:INFO:Importing untrained model
+2024-07-22 22:53:26,546:INFO:Grand Means Forecaster Imported successfully
+2024-07-22 22:53:26,548:INFO:Starting cross validation
+2024-07-22 22:53:26,550:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], dtype='int32', is_relative=True),
+                        initial_window=6699, step_length=12), n_jobs=-1
+2024-07-22 22:53:26,651:WARNING:C:\Users\Rizen3\Desktop\Vamshi\Machine Learning and DSA\MLVenv\Lib\site-packages\sklearn\metrics\_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2024-07-22 22:53:26,652:WARNING:C:\Users\Rizen3\Desktop\Vamshi\Machine Learning and DSA\MLVenv\Lib\site-packages\sklearn\metrics\_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2024-07-22 22:53:26,655:WARNING:C:\Users\Rizen3\Desktop\Vamshi\Machine Learning and DSA\MLVenv\Lib\site-packages\sklearn\metrics\_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2024-07-22 22:53:26,655:WARNING:C:\Users\Rizen3\Desktop\Vamshi\Machine Learning and DSA\MLVenv\Lib\site-packages\sklearn\metrics\_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2024-07-22 22:53:26,656:WARNING:C:\Users\Rizen3\Desktop\Vamshi\Machine Learning and DSA\MLVenv\Lib\site-packages\sklearn\metrics\_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2024-07-22 22:53:26,657:WARNING:C:\Users\Rizen3\Desktop\Vamshi\Machine Learning and DSA\MLVenv\Lib\site-packages\sklearn\metrics\_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2024-07-22 22:53:26,666:INFO:Calculating mean and std
+2024-07-22 22:53:26,667:INFO:Creating metrics dataframe
+2024-07-22 22:53:26,670:INFO:Uploading results into container
+2024-07-22 22:53:26,671:INFO:Uploading model into container now
+2024-07-22 22:53:26,671:INFO:_master_model_container: 3
+2024-07-22 22:53:26,671:INFO:_display_container: 2
+2024-07-22 22:53:26,671:INFO:NaiveForecaster(strategy='mean')
+2024-07-22 22:53:26,671:INFO:create_model() successfully completed......................................
+2024-07-22 22:53:26,774:ERROR:create_model() for NaiveForecaster(strategy='mean') raised an exception or returned all 0.0:
+2024-07-22 22:53:26,775:ERROR:Traceback (most recent call last):
+  File "C:\Users\Rizen3\Desktop\Vamshi\Machine Learning and DSA\MLVenv\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 797, in compare_models
+    np.sum(
+AssertionError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Rizen3\Desktop\Vamshi\Machine Learning and DSA\MLVenv\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 818, in compare_models
+    np.sum(
+AssertionError
+
+2024-07-22 22:53:26,776:INFO:Initializing Seasonal Naive Forecaster
+2024-07-22 22:53:26,776:INFO:Total runtime is 0.16248011191685996 minutes
+2024-07-22 22:53:26,776:INFO:SubProcess create_model() called ==================================
+2024-07-22 22:53:26,776:INFO:Initializing create_model()
+2024-07-22 22:53:26,776:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x000001F8E676B710>, estimator=snaive, fold=3, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001F8E8F5D690>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-07-22 22:53:26,776:INFO:Checking exceptions
+2024-07-22 22:53:26,776:INFO:Importing libraries
+2024-07-22 22:53:26,776:INFO:Copying training dataset
+2024-07-22 22:53:26,780:INFO:Defining folds
+2024-07-22 22:53:26,781:INFO:Declaring metric variables
+2024-07-22 22:53:26,782:INFO:Importing untrained model
+2024-07-22 22:53:26,782:INFO:Seasonal Naive Forecaster Imported successfully
+2024-07-22 22:53:26,784:INFO:Starting cross validation
+2024-07-22 22:53:26,786:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], dtype='int32', is_relative=True),
+                        initial_window=6699, step_length=12), n_jobs=-1
+2024-07-22 22:53:26,961:WARNING:C:\Users\Rizen3\Desktop\Vamshi\Machine Learning and DSA\MLVenv\Lib\site-packages\sklearn\metrics\_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2024-07-22 22:53:26,962:WARNING:C:\Users\Rizen3\Desktop\Vamshi\Machine Learning and DSA\MLVenv\Lib\site-packages\sklearn\metrics\_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2024-07-22 22:53:26,964:WARNING:C:\Users\Rizen3\Desktop\Vamshi\Machine Learning and DSA\MLVenv\Lib\site-packages\sklearn\metrics\_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2024-07-22 22:53:26,965:WARNING:C:\Users\Rizen3\Desktop\Vamshi\Machine Learning and DSA\MLVenv\Lib\site-packages\sklearn\metrics\_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2024-07-22 22:53:26,972:WARNING:C:\Users\Rizen3\Desktop\Vamshi\Machine Learning and DSA\MLVenv\Lib\site-packages\sklearn\metrics\_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2024-07-22 22:53:26,973:WARNING:C:\Users\Rizen3\Desktop\Vamshi\Machine Learning and DSA\MLVenv\Lib\site-packages\sklearn\metrics\_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2024-07-22 22:53:26,984:INFO:Calculating mean and std
+2024-07-22 22:53:26,985:INFO:Creating metrics dataframe
+2024-07-22 22:53:26,988:INFO:Uploading results into container
+2024-07-22 22:53:26,988:INFO:Uploading model into container now
+2024-07-22 22:53:26,989:INFO:_master_model_container: 4
+2024-07-22 22:53:26,989:INFO:_display_container: 2
+2024-07-22 22:53:26,989:INFO:NaiveForecaster(sp=7)
+2024-07-22 22:53:26,989:INFO:create_model() successfully completed......................................
+2024-07-22 22:53:27,093:INFO:SubProcess create_model() end ==================================
+2024-07-22 22:53:27,094:INFO:Creating metrics dataframe
+2024-07-22 22:53:27,098:INFO:Initializing Polynomial Trend Forecaster
+2024-07-22 22:53:27,098:INFO:Total runtime is 0.16784721215566 minutes
+2024-07-22 22:53:27,098:INFO:SubProcess create_model() called ==================================
+2024-07-22 22:53:27,098:INFO:Initializing create_model()
+2024-07-22 22:53:27,098:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x000001F8E676B710>, estimator=polytrend, fold=3, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001F8E8F5D690>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-07-22 22:53:27,099:INFO:Checking exceptions
+2024-07-22 22:53:27,099:INFO:Importing libraries
+2024-07-22 22:53:27,099:INFO:Copying training dataset
+2024-07-22 22:53:27,103:INFO:Defining folds
+2024-07-22 22:53:27,104:INFO:Declaring metric variables
+2024-07-22 22:53:27,105:INFO:Importing untrained model
+2024-07-22 22:53:27,105:INFO:Polynomial Trend Forecaster Imported successfully
+2024-07-22 22:53:27,107:INFO:Starting cross validation
+2024-07-22 22:53:27,109:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], dtype='int32', is_relative=True),
+                        initial_window=6699, step_length=12), n_jobs=-1
+2024-07-22 22:53:27,244:WARNING:C:\Users\Rizen3\Desktop\Vamshi\Machine Learning and DSA\MLVenv\Lib\site-packages\sklearn\metrics\_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2024-07-22 22:53:27,245:WARNING:C:\Users\Rizen3\Desktop\Vamshi\Machine Learning and DSA\MLVenv\Lib\site-packages\sklearn\metrics\_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2024-07-22 22:53:27,245:WARNING:C:\Users\Rizen3\Desktop\Vamshi\Machine Learning and DSA\MLVenv\Lib\site-packages\sklearn\metrics\_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2024-07-22 22:53:27,246:WARNING:C:\Users\Rizen3\Desktop\Vamshi\Machine Learning and DSA\MLVenv\Lib\site-packages\sklearn\metrics\_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2024-07-22 22:53:27,247:WARNING:C:\Users\Rizen3\Desktop\Vamshi\Machine Learning and DSA\MLVenv\Lib\site-packages\sklearn\metrics\_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2024-07-22 22:53:27,260:INFO:Calculating mean and std
+2024-07-22 22:53:27,261:INFO:Creating metrics dataframe
+2024-07-22 22:53:27,265:INFO:Uploading results into container
+2024-07-22 22:53:27,265:INFO:Uploading model into container now
+2024-07-22 22:53:27,266:INFO:_master_model_container: 5
+2024-07-22 22:53:27,266:INFO:_display_container: 2
+2024-07-22 22:53:27,266:INFO:PolynomialTrendForecaster()
+2024-07-22 22:53:27,266:INFO:create_model() successfully completed......................................
+2024-07-22 22:53:27,373:INFO:SubProcess create_model() end ==================================
+2024-07-22 22:53:27,373:INFO:Creating metrics dataframe
+2024-07-22 22:53:27,377:INFO:Initializing ARIMA
+2024-07-22 22:53:27,377:INFO:Total runtime is 0.17249758640925092 minutes
+2024-07-22 22:53:27,377:INFO:SubProcess create_model() called ==================================
+2024-07-22 22:53:27,377:INFO:Initializing create_model()
+2024-07-22 22:53:27,377:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x000001F8E676B710>, estimator=arima, fold=3, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001F8E8F5D690>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-07-22 22:53:27,377:INFO:Checking exceptions
+2024-07-22 22:53:27,377:INFO:Importing libraries
+2024-07-22 22:53:27,378:INFO:Copying training dataset
+2024-07-22 22:53:27,382:INFO:Defining folds
+2024-07-22 22:53:27,383:INFO:Declaring metric variables
+2024-07-22 22:53:27,384:INFO:Importing untrained model
+2024-07-22 22:53:27,385:INFO:ARIMA Imported successfully
+2024-07-22 22:53:27,387:INFO:Starting cross validation
+2024-07-22 22:53:27,388:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], dtype='int32', is_relative=True),
+                        initial_window=6699, step_length=12), n_jobs=-1
+2024-07-22 22:53:28,193:WARNING:C:\Users\Rizen3\Desktop\Vamshi\Machine Learning and DSA\MLVenv\Lib\site-packages\sklearn\metrics\_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2024-07-22 22:53:28,194:WARNING:C:\Users\Rizen3\Desktop\Vamshi\Machine Learning and DSA\MLVenv\Lib\site-packages\sklearn\metrics\_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2024-07-22 22:53:28,202:WARNING:C:\Users\Rizen3\Desktop\Vamshi\Machine Learning and DSA\MLVenv\Lib\site-packages\sklearn\metrics\_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2024-07-22 22:53:28,203:WARNING:C:\Users\Rizen3\Desktop\Vamshi\Machine Learning and DSA\MLVenv\Lib\site-packages\sklearn\metrics\_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2024-07-22 22:53:28,209:WARNING:C:\Users\Rizen3\Desktop\Vamshi\Machine Learning and DSA\MLVenv\Lib\site-packages\sklearn\metrics\_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2024-07-22 22:53:28,209:WARNING:C:\Users\Rizen3\Desktop\Vamshi\Machine Learning and DSA\MLVenv\Lib\site-packages\sklearn\metrics\_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2024-07-22 22:53:28,226:INFO:Calculating mean and std
+2024-07-22 22:53:28,228:INFO:Creating metrics dataframe
+2024-07-22 22:53:28,232:INFO:Uploading results into container
+2024-07-22 22:53:28,233:INFO:Uploading model into container now
+2024-07-22 22:53:28,233:INFO:_master_model_container: 6
+2024-07-22 22:53:28,233:INFO:_display_container: 2
+2024-07-22 22:53:28,234:INFO:ARIMA(seasonal_order=(0, 1, 0, 7))
+2024-07-22 22:53:28,234:INFO:create_model() successfully completed......................................
+2024-07-22 22:53:28,369:INFO:SubProcess create_model() end ==================================
+2024-07-22 22:53:28,369:INFO:Creating metrics dataframe
+2024-07-22 22:53:28,373:INFO:Initializing Auto ARIMA
+2024-07-22 22:53:28,373:INFO:Total runtime is 0.18910063107808434 minutes
+2024-07-22 22:53:28,373:INFO:SubProcess create_model() called ==================================
+2024-07-22 22:53:28,373:INFO:Initializing create_model()
+2024-07-22 22:53:28,373:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x000001F8E676B710>, estimator=auto_arima, fold=3, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001F8E8F5D690>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-07-22 22:53:28,373:INFO:Checking exceptions
+2024-07-22 22:53:28,373:INFO:Importing libraries
+2024-07-22 22:53:28,373:INFO:Copying training dataset
+2024-07-22 22:53:28,377:INFO:Defining folds
+2024-07-22 22:53:28,379:INFO:Declaring metric variables
+2024-07-22 22:53:28,379:INFO:Importing untrained model
+2024-07-22 22:53:28,380:INFO:Auto ARIMA Imported successfully
+2024-07-22 22:53:28,382:INFO:Starting cross validation
+2024-07-22 22:53:28,383:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], dtype='int32', is_relative=True),
+                        initial_window=6699, step_length=12), n_jobs=-1
