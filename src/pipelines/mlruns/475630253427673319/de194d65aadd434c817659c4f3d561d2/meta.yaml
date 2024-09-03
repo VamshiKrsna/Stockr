@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Rizen3/Desktop/Vamshi/Machine%20Learning%20and%20DSA/SelfProjects/stockr/src/pipelines/mlruns/475630253427673319/de194d65aadd434c817659c4f3d561d2/artifacts
+end_time: 1725346037270
+entry_point_name: ''
+experiment_id: '475630253427673319'
+lifecycle_stage: active
+run_id: de194d65aadd434c817659c4f3d561d2
+run_name: Stock Forecasting Pipeline
+run_uuid: de194d65aadd434c817659c4f3d561d2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1725346036785
+status: 3
+tags: []
+user_id: Rizen3
