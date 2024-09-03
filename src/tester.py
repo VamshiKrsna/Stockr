@@ -6,7 +6,7 @@ base_dir = os.path.dirname(os.path.abspath(__file__))
 
 # Define the paths to the scripts relative to the base directory
 data_preprocessing_path = os.path.join(base_dir, 'src', 'data', 'data_preprocessing.py')
-feature_engineering_path = os.path.join(base_dir, 'src', 'data', 'feature_engineering.py')
+feature_engineering_path = os.path.join(base_dir, 'src', 'features', 'feature_engineering.py')
 train_path = os.path.join(base_dir, 'src', 'train.py')
 evaluate_path = os.path.join(base_dir, 'src', 'evaluate.py')
 
