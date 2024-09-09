@@ -2,7 +2,7 @@
 Stockr is an end to end ML and DL Powered App that lets you predict/forecast a stock.
 
 <p align="center">
-    <img width="200" src="src/stockr_logo.png" alt="Stockr Logo">
+    <img width="200" src="/stockr_logo.png" alt="Stockr Logo">
 </p>
 
 **THIS PROJECT IS UNDER DEVELOPMENT**
